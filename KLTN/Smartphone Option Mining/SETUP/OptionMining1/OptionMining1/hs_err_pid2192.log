@@ -1,0 +1,157 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=2192, tid=1708
+#
+# JRE version:  (7.0_79-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.79-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002d7d800):  JavaThread "Unknown thread" [_thread_in_vm, id=1708, stack(0x0000000000fe0000,0x00000000010e0000)]
+
+Stack: [0x0000000000fe0000,0x00000000010e0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002d7d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1708, stack(0x0000000000fe0000,0x00000000010e0000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 38400K, used 665K [0x00000007d5e80000, 0x00000007d8900000, 0x0000000800000000)
+  eden space 33280K, 2% used [0x00000007d5e80000,0x00000007d5f266b8,0x00000007d7f00000)
+  from space 5120K, 0% used [0x00000007d8400000,0x00000007d8400000,0x00000007d8900000)
+  to   space 5120K, 0% used [0x00000007d7f00000,0x00000007d7f00000,0x00000007d8400000)
+ ParOldGen       total 86016K, used 0K [0x0000000781c00000, 0x0000000787000000, 0x00000007d5e80000)
+  object space 86016K, 0% used [0x0000000781c00000,0x0000000781c00000,0x0000000787000000)
+ PSPermGen       total 21504K, used 688K [0x000000077ca00000, 0x000000077df00000, 0x0000000781c00000)
+  object space 21504K, 3% used [0x000000077ca00000,0x000000077caac2f0,0x000000077df00000)
+
+Card table byte_map: [0x0000000005e90000,0x00000000062b0000] byte_map_base: 0x00000000022ab000
+
+Polling page: 0x0000000000eb0000
+
+Code Cache  [0x0000000002dd0000, 0x0000000003040000, 0x0000000005dd0000)
+ total_blobs=38 nmethods=0 adapters=20 free_code_cache=48889Kb largest_free_block=50062528
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.067 loading class 0x0000000002c664d0
+Event: 0.067 loading class 0x0000000002c664d0 done
+Event: 0.067 loading class 0x0000000002c66520
+Event: 0.067 loading class 0x0000000002c66520 done
+Event: 0.067 loading class 0x0000000002c66570
+Event: 0.067 loading class 0x0000000002c66570 done
+Event: 0.068 loading class 0x0000000002c672f0
+Event: 0.068 loading class 0x0000000002c672f0 done
+Event: 0.068 loading class 0x0000000002c66f10
+Event: 0.068 loading class 0x0000000002c66f10 done
+
+
+Dynamic libraries:
+0x00007ff793240000 - 0x00007ff793273000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x00007ffdd3800000 - 0x00007ffdd39ad000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffdd0e90000 - 0x00007ffdd0fce000 	C:\Windows\system32\KERNEL32.DLL
+0x00007ffdd0d70000 - 0x00007ffdd0e85000 	C:\Windows\system32\KERNELBASE.dll
+0x00007ffdcf4b0000 - 0x00007ffdcf53e000 	C:\Windows\system32\apphelp.dll
+0x00007ffdcbc60000 - 0x00007ffdcbcb3000 	C:\Windows\AppPatch\AppPatch64\AcGenral.DLL
+0x00007ffdd14d0000 - 0x00007ffdd157a000 	C:\Windows\system32\msvcrt.dll
+0x00007ffdd0a00000 - 0x00007ffdd0a2e000 	C:\Windows\system32\SspiCli.dll
+0x00007ffdd36b0000 - 0x00007ffdd3704000 	C:\Windows\system32\SHLWAPI.dll
+0x00007ffdd1970000 - 0x00007ffdd1ae7000 	C:\Windows\system32\USER32.dll
+0x00007ffdd3180000 - 0x00007ffdd3314000 	C:\Windows\system32\ole32.dll
+0x00007ffdd1af0000 - 0x00007ffdd301a000 	C:\Windows\system32\SHELL32.dll
+0x00007ffdcfdb0000 - 0x00007ffdcfdd1000 	C:\Windows\SYSTEM32\USERENV.dll
+0x00007ffdd15e0000 - 0x00007ffdd168a000 	C:\Windows\system32\ADVAPI32.dll
+0x00007ffdc5f60000 - 0x00007ffdc5f7e000 	C:\Windows\SYSTEM32\MPR.dll
+0x00007ffdd3510000 - 0x00007ffdd3650000 	C:\Windows\system32\RPCRT4.dll
+0x00007ffdd3650000 - 0x00007ffdd36a9000 	C:\Windows\SYSTEM32\sechost.dll
+0x00007ffdd1690000 - 0x00007ffdd18a1000 	C:\Windows\SYSTEM32\combase.dll
+0x00007ffdd11d0000 - 0x00007ffdd131f000 	C:\Windows\system32\GDI32.dll
+0x00007ffdd0930000 - 0x00007ffdd0945000 	C:\Windows\SYSTEM32\profapi.dll
+0x00007ffdcf3d0000 - 0x00007ffdcf482000 	C:\Windows\SYSTEM32\SHCORE.dll
+0x00007ffdd3390000 - 0x00007ffdd33c6000 	C:\Windows\system32\IMM32.DLL
+0x00007ffdd3020000 - 0x00007ffdd3172000 	C:\Windows\system32\MSCTF.dll
+0x00007ffdd08e0000 - 0x00007ffdd0911000 	C:\Windows\system32\nvinitx.dll
+0x00007ffdd0880000 - 0x00007ffdd088a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x00007ffdcdc10000 - 0x00007ffdcdc41000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x00007ffdd0fd0000 - 0x00007ffdd11aa000 	C:\Windows\system32\SETUPAPI.dll
+0x00007ffdd0a30000 - 0x00007ffdd0a7f000 	C:\Windows\system32\CFGMGR32.dll
+0x00007ffdcdb70000 - 0x00007ffdcdb92000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x00007ffdce9d0000 - 0x00007ffdcec4b000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.18006_none_623f33d3ecbe86e8\COMCTL32.dll
+0x0000000056a20000 - 0x0000000056af2000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x0000000056020000 - 0x00000000567f5000 	C:\Program Files\Java\jre7\bin\server\jvm.dll
+0x00007ffdca140000 - 0x00007ffdca149000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffdce340000 - 0x00007ffdce362000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffdd3710000 - 0x00007ffdd3717000 	C:\Windows\system32\PSAPI.DLL
+0x00007ffdd3330000 - 0x00007ffdd338a000 	C:\Windows\system32\WS2_32.dll
+0x00007ffdce310000 - 0x00007ffdce33a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x00007ffdd37f0000 - 0x00007ffdd37f9000 	C:\Windows\system32\NSI.dll
+0x00007ffdcf700000 - 0x00007ffdcf728000 	C:\Windows\SYSTEM32\DEVOBJ.dll
+0x0000000056a10000 - 0x0000000056a1f000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x00000000569e0000 - 0x0000000056a08000 	C:\Program Files\Java\jre7\bin\java.dll
+0x0000000055d70000 - 0x0000000055da5000 	C:\Program Files\Java\jre7\bin\jdwp.dll
+0x0000000055d60000 - 0x0000000055d68000 	C:\Program Files\Java\jre7\bin\npt.dll
+0x00000000569c0000 - 0x00000000569d5000 	C:\Program Files\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:33745 -Dfile.encoding=UTF-8 
+java_command: uit.nguyenhung.main.Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\nodejs\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Users\Nguyen Hung\AppData\Roaming\npm
+USERNAME=Nguyen Hung
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8.1 , 64 bit Build 9600 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 8271484k(3179580k free), swap 11417212k(5812k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.79-b02) for windows-amd64 JRE (1.7.0_79-b15), built on Apr 10 2015 12:36:16 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jun 22 22:56:10 2016
+elapsed time: 0 seconds
+

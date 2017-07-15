@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/uit/nguyenhung/downloadweb/DownloadComment.java=UTF-8
+encoding//src/uit/nguyenhung/list/model/StoringData.java=UTF-8
+encoding//src/uit/nguyenhung/main/Main.java=UTF-8
+encoding//src/uit/nguyenhung/model/Comment.java=UTF-8
+encoding//src/uit/nguyenhung/model/Product.java=UTF-8
+encoding//src/uit/nguyenhung/model/Sentence.java=UTF-8
+encoding//src/uit/nguyenhung/myframe/CommentFrame.java=UTF-8
+encoding//src/uit/nguyenhung/myframe/DrawingGraph.java=UTF-8
+encoding//src/uit/nguyenhung/myframe/SentenceFrame.java=UTF-8
+encoding//src/uit/nguyenhung/process/StringProcessing.java=UTF-8
+encoding//src/uit/nguyenhung/sqlite/IO.java=UTF-8
+encoding//src/uit/nguyenhung/vntagger/Tagger.java=UTF-8
